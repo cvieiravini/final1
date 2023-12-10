@@ -1,0 +1,205 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:500';
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Helvetica", Sans-Serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3E2818;
+    display: flex;
+    
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+}
+#home {
+    background-color: #DACBB4;
+
+ }
+#home h1{
+
+    color: black;
+    text-align: center;
+ }
+ 
+ #bio{
+      background-color: #3E2818;
+      height: 600vh;
+ }
+
+ img {
+    max-width: 100%; /* A imagem não ultrapassará a largura do contêiner pai */
+      height: auto;    /* A altura é ajustada automaticamente para manter a proporção */
+      display: block;   /* Remove espaços extras ao redor da imagem */
+      margin: auto;     /* Centraliza a imagem no contêiner pai */
+      background-color: white;
+ }
+
+ #bio h1{
+    position: absolute;
+    top: auto;
+ }
+
+ #bio h2{
+    color: #e9db5b;
+ }
+
+ #bio p{
+    color: white;
+ }
+ 
+ #qui{
+      background-color: #3E2818;
+ }
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+h3{
+    color: rgb(206, 140, 206);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: unset;
+}
+.hamburger {
+    display: none;
+}
+.nav-bar ul {
+    display: inline-flex;
+}
+.nav-bar ul li a {
+    display: inline;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: #fefefe;
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background: #fefefe;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}  
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}  
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        font-size: 30px;
+        height: 450px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #15190f;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        z-index: 1;
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+/* Existing CSS styles remain the same */
+
+body {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically on small screens */
+}
+
+section {
+    margin:20 auto;
+    z-index: 0;
+    padding: 20px;
+    text-align: center;
+    border: none;
+    font-size: medium;
+}
+
+/* Adjust other styles as needed for each section */
+
+@media only screen and (max-width: 900px) {
+    /* Existing styles for smaller screens */
+
+    section {
+        padding: 10px;
+    }
+}
+
+li {
+    color: #fefefe;
+}
+
+span {
+    color: rgb(69, 236, 69);
+}
